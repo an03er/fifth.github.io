@@ -1,5 +1,6 @@
 .head{
     background-image: url(image.png);
+    background-size: cover;
     width: 100%;
     margin: 0 auto;
     height: 550px;
@@ -11,6 +12,16 @@
     margin-top: 150px;
     border: 5px solid;
     border-radius: 10px;
+}
+
+.selection button{
+    background-color: #d1a085;
+    border: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: Georgia, sans-serif;
+    font-size: 25px;
+    color: antiquewhite;
 }
 
 a { 
@@ -212,19 +223,4 @@ body{
 .photos li:hover div.effect-to-right {
     opacity: 1;
     transform: translate(0px, 0px) rotate(0deg);
-}
-
-@media screen and (max-width: 480px){
-    .menu{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .content{
-        display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    height: 100%;
-    }
-
 }
