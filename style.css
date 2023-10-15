@@ -1,0 +1,230 @@
+.head{
+    background-image: url(image.png);
+    width: 100%;
+    margin: 0 auto;
+    height: 550px;
+}
+
+.text{
+    font-size: 50px;
+    background-color:  #1a1a1a;
+    margin-top: 150px;
+    border: 5px solid;
+    border-radius: 10px;
+}
+
+a { 
+    text-decoration: none;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+    color: antiquewhite;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: Georgia, sans-serif;
+    font-size: 25px;
+  }
+
+.head_text{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #fefefe;
+    font-family: 'Ubuntu';
+    letter-spacing: 0.2em;
+    text-rendering: optimizeLegibility;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    background-color:#d1a085;
+    height: 50px;
+    width: 100%;;
+    position: sticky;
+    top: 0;
+}
+
+.nav{
+    padding: 10px;
+}
+
+.content{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.open{
+    float: right;
+    background-color: #d1a085;
+    border-radius: 10px;
+    width: 200px;
+    color: antiquewhite;
+    font-family: Georgia, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: 2px solid antiquewhite;
+}
+
+.open:hover{
+    background-color: #1a1a1a;
+    color: white;
+}
+
+
+body{
+    background-color: #1a1a1a;
+}
+
+.nav a{
+    margin: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.calculator{
+    display: flex;
+    justify-content: center;
+    margin: 150px;
+    border: 3px solid antiquewhite;
+    border-radius: 10px;
+    font-family: Georgia, sans-serif;
+    font-size: 20px;
+    color:antiquewhite;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.selection{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.selection input{
+    background-color: #d1a085;
+    color: antiquewhite;
+    font-family: Georgia, sans-serif;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.selection select{
+    background-color: #d1a085;
+    color: antiquewhite;
+    font-family: Georgia, sans-serif;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.selection option{
+    background-color: #d1a085;
+    color: antiquewhite;
+    font-family: Georgia, sans-serif;
+    font-size: 20px;
+}
+
+.cost{
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.photos{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    list-style:none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 0px;
+}
+
+.photos img{
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.photos li{
+    position: relative;
+    width: 49%;
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 10px;
+    box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.photos li h3{
+    color: #fff;
+    margin: 5px;
+}
+
+.photos li p{
+    color: #fff;
+    margin: 5px;
+}
+
+.photos li a{
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+.photos li a:hover{
+    background: #454545;
+    color: #fff;
+}
+
+.photos li > div.effect-to-right {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.photos li:hover > div.effect-to-right {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.photos li div.effect-to-right {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    transform: translate(-250px, 0px) rotate(0deg); 
+}
+.photos li:hover div.effect-to-right {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+}
+
+@media screen and (max-width: 480px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    }
+
+}
