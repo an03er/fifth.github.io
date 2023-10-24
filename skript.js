@@ -10,3 +10,5 @@ function calc() {
       document.getElementById('result').innerHTML = "Стоимость равна: "+ price +" р.";
     }
 }
+
+window.addEventListener('click', calc);
