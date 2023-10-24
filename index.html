@@ -21,18 +21,17 @@
         <section id ="calculator" div class="calculator">
             <div class="selection">
                 Выберете вид цветов:
-                <select onchange="calc()" id="type_flowers">
+                <select id="type_flowers">
                     <option value="190">Розы</option>
                     <option value="140">Тюльпаны</option>
                     <option value="390">Пионы</option>
                     <option value="490">Лилии</option>
                     <option value="250">Хризантемы</option>
                 </select><br/>
-                Укажите количество: <input type="text" id="count" value="0" onchange="calc()" />
-                <button onclick="calc()">Рассчитать стоимость</button>
+                Укажите количество: <input type="text" id="count" value="0"/>
+                <button >Рассчитать стоимость</button>
                 <div id="result"></div>
             </div>
         </section>
     </body>
 </html>
-
