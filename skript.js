@@ -11,4 +11,4 @@ function calc() {
     }
 }
 
-window.addEventListener('click', calc);
+but.addEventListener('click', calc);
