@@ -11,4 +11,6 @@ function calc() {
     }
 }
 
-but.addEventListener('click', calc);
+document.addEventListener("DOMContentLoaded", function(){
+    but.addEventListener('click', calc);
+});
